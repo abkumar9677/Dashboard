@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .featuredItem{
     flex: 1;
@@ -46,4 +47,11 @@
 .featuredSub{
     font-size: 15px;
     color: gray;
+   
 }
+@media screen and (max-width: 480px) {
+    .featured{
+        display: block;
+
+    }
+  }

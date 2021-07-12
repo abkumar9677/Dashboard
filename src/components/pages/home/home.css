@@ -5,3 +5,8 @@
     display: flex;
     margin: 20px;
 }
+@media screen and (max-width: 480px) {
+    .home{
+        display: block;
+    }
+  }
