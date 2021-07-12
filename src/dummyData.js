@@ -151,6 +151,16 @@ export  const userdata = [
     },
   ];
 
+
+  export const headerProduct = [
+    {label:"ID", key: "id"},
+    {label:"UserName", key: "name"},    
+    {label:"Product Image", key: "img"},    
+    {label:"Stock?", key: "stock"},    
+    {label:"Status", key: "status"},    
+    {label:"Price", key: "price"}    
+  ]
+
   export const productRows = [
     {
       id: 1,

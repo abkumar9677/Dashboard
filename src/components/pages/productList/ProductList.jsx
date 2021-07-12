@@ -2,9 +2,10 @@ import React from 'react'
 import './productList.css'
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
-import { productRows } from "../../../dummyData";
+import { productRows,headerProduct } from "../../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { CSVLink } from 'react-csv';
 
 export default function ProductList() {
   const [data, setData] = useState(productRows);
@@ -61,12 +62,16 @@ export default function ProductList() {
 
   return (
     <div className="productList">
+      <CSVLink data={productRows} headers={headerProduct}>
+        <button style={{backgroundColor:"blue",color:'white',cursor:'pointer'}}>Download Me</button>
+      </CSVLink>
       <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={10}
         checkboxSelection
+        autoPageSize
       />
     </div>
   );
