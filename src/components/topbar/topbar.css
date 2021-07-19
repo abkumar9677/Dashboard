@@ -26,6 +26,12 @@
     margin-right: 10px;
     color: #555;
 }
+.topLeft{
+    display: flex;
+}
+.selectPanel{
+    width: 110px;
+}
 .topbarIconContainer{
     position: relative;
     margin-right: 10px;

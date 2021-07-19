@@ -268,3 +268,9 @@ export  const userdata = [
       "Sales": 5000,
     },
   ];
+
+
+  export const options =[
+    { value: 'Admin', label: 'Admin' },
+    { value: 'User', label: 'User' }
+  ];
